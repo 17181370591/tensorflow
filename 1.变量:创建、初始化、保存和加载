@@ -21,7 +21,7 @@ biases = tf.Variable(tf.zeros([200]), name="biases")
 一个Variable操作存放变量的值。
 一个初始化op将变量设置为初始值。这事实上是一个tf.assign操作.
 初始值的操作，例如示例中对biases变量的zeros操作也被加入了graph。
-tf.Variable的返回值是Python的tf.Variable类的一个实例。
+tf.Variable的返回值是Python的tf.Variable类的一个实例。 
 
 初始化
 变量的初始化必须在模型的其它操作运行之前先明确地完成。最简单的方法就是添加一个给所有变量初始化的操作，并在使用模型之前首先运行那个操作。
